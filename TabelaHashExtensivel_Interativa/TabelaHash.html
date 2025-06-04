@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização Interativa da Tabela Hash Extensível</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Visualização Interativa da Tabela Hash Extensível</h1>
+
+        <div class="grid">
+            <div class="main-content">
+                <!-- Diretório -->
+                <div class="card" id="diretorio-container">
+                    <h2>Diretório</h2>
+                    <div class="flex">
+                        <span class="label">Profundidade Global:</span>
+                        <span class="badge" id="profundidade-global">0</span>
+                    </div>
+                    <div class="text-small" id="tamanho-diretorio">
+                        Tamanho do diretório: 1 entradas
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Índice</th>
+                                    <th>Endereço do Cesto</th>
+                                    <th>Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody id="diretorio-tabela">
+                                <!-- Preenchido dinamicamente pelo JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Painel Explicativo -->
+                <div class="card" id="painel-explicativo">
+                    <div class="header" id="painel-header">
+                        <h3 id="painel-titulo">Tabela Hash Extensível</h3>
+                        <span class="badge-small" id="painel-passo" style="display: none;">Passo 1</span>
+                    </div>
+
+                    <div class="content">
+                        <div id="painel-mensagem">
+                            Bem-vindo à visualização interativa da Tabela Hash Extensível. Utilize o painel de controle
+                            para realizar operações.
+                        </div>
+
+                        <div id="painel-codigo-container" style="display: none;">
+                            <h4>Código Fonte:</h4>
+                            <pre id="painel-codigo"></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cestos -->
+                <div class="cestos-grid" id="cestos-container">
+                    <!-- Preenchido dinamicamente pelo JavaScript -->
+                </div>
+            </div>
+
+            <!-- Painel de Controle -->
+            <div class="sidebar">
+                <div class="card">
+                    <h2>Painel de Controle</h2>
+
+                    <div class="button-group">
+                        <button class="btn btn-primary active" data-operacao="inserir">Inserir</button>
+                        <button class="btn" data-operacao="buscar">Buscar</button>
+                        <button class="btn" data-operacao="atualizar">Atualizar</button>
+                        <button class="btn" data-operacao="remover">Remover</button>
+                        <button class="btn" data-operacao="configurar">Configurar</button>
+                    </div>
+
+                    <form id="operacao-form">
+                        <div id="form-inserir-buscar">
+                            <div class="form-group">
+                                <label for="chave">Chave (número):</label>
+                                <input type="number" id="chave" class="input">
+                            </div>
+
+                            <div class="form-group" id="valor-container">
+                                <label for="valor">Valor:</label>
+                                <input type="text" id="valor" class="input">
+                            </div>
+                        </div>
+
+                        <div id="form-configurar" style="display: none;">
+                            <div class="form-group">
+                                <label for="dados-por-cesto">Quantidade de dados por cesto:</label>
+                                <input type="number" id="dados-por-cesto" class="input" min="1" max="10" value="4">
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" id="btn-executar">Executar</button>
+                            <button type="button" class="btn" id="btn-limpar">Limpar Histórico</button>
+                        </div>
+                    </form>
+
+                    <div class="form-group">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="modo-passo" class="checkbox">
+                            <label for="modo-passo">Modo Passo a Passo</label>
+                        </div>
+                        <button type="button" class="btn btn-success" id="btn-avancar"
+                            style="display: none;">Avançar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
