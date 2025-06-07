@@ -39,6 +39,9 @@ Além de todas as operações CRUD, o sistema demonstra, passo a passo, como a e
 
 ## 🏗️ Estrutura do Projeto
 
+### Estrutura do Projeto
+
+
 ├── index.html            # Interface principal
 ├── styles.css            # Ajustes Tailwind + animações
 ├── hash/                 # Implementação da Tabela Hash Extensível
@@ -49,6 +52,8 @@ Além de todas as operações CRUD, o sistema demonstra, passo a passo, como a e
 └── ui/                   # Camada de interação e renderização
     ├── controller.js     # Lógica de CRUD + histórico
     └── renderer.js       # Funções de desenho (diretório, cestos, painel)
+
+
 
 
 
