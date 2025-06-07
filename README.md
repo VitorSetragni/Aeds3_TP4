@@ -92,7 +92,7 @@ A camada **UI** encapsula:
 
 ---
 
-## ✅ Checklist (responda sim/não)
+## ✅ Checklist 
 
 | Item | Resposta |
 |------|----------|
@@ -105,7 +105,7 @@ A camada **UI** encapsula:
 ---
 
 ## 🎥 Demonstração em vídeo
-[▶️ Assista ao vídeo (1 min 45 s)](https://youtu.be/SEU_VIDEO)
+[▶️ Assista ao vídeo ](https://youtu.be/SEU_VIDEO)
 
 ---
 
