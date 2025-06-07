@@ -29,11 +29,11 @@ Além de todas as operações CRUD, o sistema demonstra, passo a passo, como a e
 ---
 
 ## 👥 Participantes
-| Nome | Matrícula |
-|------|-----------|
-| Vitor Leite Setragni | *xxxxx* |
-| Gabriel Henrique de Morais | *xxxxx* |
-| Mateus Martins Parreiras | *xxxxx* |
+| Nome |
+|------|
+| Vitor Leite Setragni |
+| Gabriel Henrique de Morais |
+| Mateus Martins Parreiras |
 
 ---
 
