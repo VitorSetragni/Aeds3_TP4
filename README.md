@@ -43,15 +43,24 @@ Além de todas as operações CRUD, o sistema demonstra, passo a passo, como a e
 
 
 ├── index.html            # Interface principal
+
 ├── styles.css            # Ajustes Tailwind + animações
+
 ├── hash/                 # Implementação da Tabela Hash Extensível
-│   ├── registro.js       # class RegistroSimples
-│   ├── cesto.js          # class Cesto
-│   ├── diretorio.js      # class Diretorio
-│   └── hashExtensivel.js # class HashExtensivel
+
+----├── registro.js       # class RegistroSimples
+
+----├── cesto.js          # class Cesto
+
+----├── diretorio.js      # class Diretorio
+
+----└── hashExtensivel.js # class HashExtensivel
+
 └── ui/                   # Camada de interação e renderização
-    ├── controller.js     # Lógica de CRUD + histórico
-    └── renderer.js       # Funções de desenho (diretório, cestos, painel)
+
+----├── controller.js     # Lógica de CRUD + histórico
+
+----└── renderer.js       # Funções de desenho (diretório, cestos, painel)
 
 
 
@@ -88,7 +97,7 @@ A camada **UI** encapsula:
 | Item | Resposta |
 |------|----------|
 | A visualização interativa da Tabela Hash Extensível foi criada? | **Sim** |
-| Há um vídeo de até 2 minutos demonstrando o uso da visualização? | **Sim** (ver link abaixo) |
+| Há um vídeo de até 2 minutos demonstrando o uso da visualização? | **Sim**  |
 | O trabalho está funcionando corretamente? | **Sim** |
 | O trabalho está completo? | **Sim** |
 | O trabalho é original e não a cópia de um trabalho de um colega? | **Sim** |
@@ -102,6 +111,4 @@ A camada **UI** encapsula:
 
 ## 📂 Repositório
 <https://github.com/VitorSetragni/Aeds3_TP4>
-
-Sinta-se à vontade para abrir _issues_ ou enviar _pull requests_ com sugestões!  
 
